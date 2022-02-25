@@ -24,7 +24,7 @@ uint64_t nPrime(uint64_t n) {
       }
     }
   }
-  return nPrime;
+  return n_Prime;
 }
 
 uint64_t nextPrime(uint64_t value) {
