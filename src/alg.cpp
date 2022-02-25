@@ -40,7 +40,7 @@ uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
   uint64_t sum = 0;
   for (uint64_t i = 1; i < hbound; i++) {
-    if checkPrime(i) == true
+    if (checkPrime(i) == true)
       sum+=i;
   }
   return sum;
