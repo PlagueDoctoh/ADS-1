@@ -29,12 +29,11 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
-  value++;
-  if (checkPrime(value) != true)
-    value++;
-  else if (checkPrime(value) == true)
-    break;
-  return value;
+  uint64_t c=0;
+  while (checkPrime(value) != true) {
+    c++;
+  }
+  return value+c;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
