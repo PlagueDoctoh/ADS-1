@@ -14,15 +14,11 @@ bool checkPrime(uint64_t value) {
 
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
-  int n_Prime = 0;
+  uint64_t n_Prime = 0;
   while (n != 0) {
-    for (int i = 0; i <= n; i++) {
-      n_Prime++;
-      if (checkPrime(n_Prime) == true) {
-        n--;
-        break;
-      }
-    }
+    n_Prime++;
+    if (checkPrime(n_Prime) == true)
+      n--;
   }
   return n_Prime;
 }
