@@ -29,8 +29,8 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
-  uint64_t c=0;
-  while (checkPrime(value) != true) {
+  uint64_t c = 1;
+  while (checkPrime(value+c) != true) {
     c++;
   }
   return value+c;
