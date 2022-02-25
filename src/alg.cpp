@@ -9,12 +9,10 @@ bool checkPrime(uint64_t value) {
     if ((value%i) == 0 || value <= 1)
       return false;
   }
-  if (value > 1) {
+  if (value > 1) 
     return true;
-  }
-  else {
+  else if (value <= 1)
     return false;
-  }
 }
 
 uint64_t nPrime(uint64_t n) {
